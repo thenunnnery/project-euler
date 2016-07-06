@@ -1,0 +1,14 @@
+var fiboNumb = 1;
+var prevNumb = 0;
+var sum = 0;
+var newNumb;
+
+for(var i = 1; i < 100; i++){
+    newNumb = fiboNumb + prevNumb;
+    prevNumb = fiboNumb;
+    fiboNumb = newNumb;
+    if(fiboNumb % 2 === 0 && fiboNumb < 4000000){
+        sum += fiboNumb;
+        console.log(sum);
+    }
+}
