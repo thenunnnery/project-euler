@@ -1,0 +1,7 @@
+var lrgNumb = 600851475143;
+var numb = Math.sqrt(i);
+for (var i = 2; i <= 1000; i++) {
+    if (lrgNumb % i === 0) {
+     lrgNumb/=i;
+    }
+} console.log(i);
