@@ -1,7 +1,15 @@
 var lrgNumb = 600851475143;
-var numb = Math.sqrt(i);
-for (var i = 2; i <= 1000; i++) {
-    if (lrgNumb % i === 0) {
-     lrgNumb/=i;
+
+function primes(numb) {
+    var factors = primes(lrgNumb);
+    for (var i = 2; i <= numb; i++) {
+        while (numb % i === 0) {
+            factors.push(i);
+            numb /= i;
+        }
     }
-} console.log(i);
+    return factors;
+
+}
+
+console.log(factors); 
