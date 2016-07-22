@@ -1,7 +1,7 @@
 var lrgNumb = 600851475143;
 
 function primes(numb) {
-    var factors = primes(lrgNumb);
+    var factors = [];
     for (var i = 2; i <= numb; i++) {
         while (numb % i === 0) {
             factors.push(i);
@@ -11,5 +11,5 @@ function primes(numb) {
     return factors;
 
 }
-
+var factors = primes(lrgNumb);
 console.log(factors); 
